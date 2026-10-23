@@ -1,0 +1,18 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+*.code-workspace
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Logs and generated files
+*.log
+node_modules/
+dist/
+build/

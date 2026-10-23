@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Send feedback about the Weather Dashboard project.">
+  <title>Contact | Weather Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Weather Dashboard home"><span class="brand-mark" aria-hidden="true">☼</span><span>Weather Dashboard</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Dashboard</a><a href="about.html">About</a><a class="active" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container page-shell content-page">
+    <p class="eyebrow">Questions or feedback</p>
+    <h1>Tell us what you think.</h1>
+    <p class="lead">This form demonstrates client-side validation. It does not send a message to a server.</p>
+    <form id="contact-form" class="contact-form" novalidate>
+      <div class="form-field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required><p class="field-error" id="name-error"></p></div>
+      <div class="form-field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required><p class="field-error" id="email-error"></p></div>
+      <div class="form-field"><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea><p class="field-error" id="message-error"></p></div>
+      <button type="submit">Validate feedback</button>
+      <p id="contact-message" class="form-message" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>SIWES Week 10 project</span><span>Frontend demonstration only</span></div></footer>
+</body>
+</html>
